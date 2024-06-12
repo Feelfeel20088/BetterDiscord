@@ -12,7 +12,7 @@ module.exports = function(dist) {
 
     for (const file of files) {
         const exists = fs.existsSync(file);
-        if (!exists) throw new Error(`    ❌ File missing: ${file}`);
-        console.log(`    ✅ Found ${file}`);
+        if (!exists) throw new Error(`\t❌ File missing: ${file}`);
+        console.log(`\t✅ Found ${file}`);
     }
 };
